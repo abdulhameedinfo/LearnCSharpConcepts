@@ -3,19 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BenchmarkDotNet.Running;
 
-
-var genericList = new GenericList<object>();
-genericList.Add(1);
-genericList.Add(2);
-genericList.Add(1);
-genericList.Add("4");
-genericList.Add("8");
-genericList.AddRange(new List<object>() { 1, 2, 3, "5" });
-
-foreach (var item in genericList.GetValues())
+public class Program
 {
-    Console.WriteLine(item.ToString());
-}
 
-System.Console.WriteLine($"Avereage of the list {genericList.GetAverage()}");
+
+    public static void Main(string[] args)
+    {
+        // Using generic function which accepts list of objects of both string and int to calculate the avereage. 
+        // new GenericAvereageCalculate().CalculateAverage();
+
+        // Compare classic array with new inline array
+        // new CoolArray().CreateCoolArray();
+        // var summaryOfArrayBenchMark = BenchmarkRunner.Run<CoolArray>();
+
+        // Static Properties. 
+        // new ClassWithStaticProperties();
+
+        // Delegates
+        new Delegates();
+    }
+}
