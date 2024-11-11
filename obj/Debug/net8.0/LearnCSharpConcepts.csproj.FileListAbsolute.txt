@@ -1,0 +1,14 @@
+e:\All Projects\Learning\LearnCSharpConcepts\bin\Debug\net8.0\LearnCSharpConcepts.exe
+e:\All Projects\Learning\LearnCSharpConcepts\bin\Debug\net8.0\LearnCSharpConcepts.deps.json
+e:\All Projects\Learning\LearnCSharpConcepts\bin\Debug\net8.0\LearnCSharpConcepts.runtimeconfig.json
+e:\All Projects\Learning\LearnCSharpConcepts\bin\Debug\net8.0\LearnCSharpConcepts.dll
+e:\All Projects\Learning\LearnCSharpConcepts\bin\Debug\net8.0\LearnCSharpConcepts.pdb
+e:\All Projects\Learning\LearnCSharpConcepts\obj\Debug\net8.0\LearnCSharpConcepts.GeneratedMSBuildEditorConfig.editorconfig
+e:\All Projects\Learning\LearnCSharpConcepts\obj\Debug\net8.0\LearnCSharpConcepts.AssemblyInfoInputs.cache
+e:\All Projects\Learning\LearnCSharpConcepts\obj\Debug\net8.0\LearnCSharpConcepts.AssemblyInfo.cs
+e:\All Projects\Learning\LearnCSharpConcepts\obj\Debug\net8.0\LearnCSharpConcepts.csproj.CoreCompileInputs.cache
+e:\All Projects\Learning\LearnCSharpConcepts\obj\Debug\net8.0\LearnCSharpConcepts.dll
+e:\All Projects\Learning\LearnCSharpConcepts\obj\Debug\net8.0\refint\LearnCSharpConcepts.dll
+e:\All Projects\Learning\LearnCSharpConcepts\obj\Debug\net8.0\LearnCSharpConcepts.pdb
+e:\All Projects\Learning\LearnCSharpConcepts\obj\Debug\net8.0\LearnCSharpConcepts.genruntimeconfig.cache
+e:\All Projects\Learning\LearnCSharpConcepts\obj\Debug\net8.0\ref\LearnCSharpConcepts.dll
