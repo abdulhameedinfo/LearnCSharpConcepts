@@ -22,6 +22,18 @@ public class Program
         // new ClassWithStaticProperties();
 
         // Delegates
-        new Delegates();
+        // new Delegates();
+
+        // Primary constructor allows parameters to be directly declared in a class or struct 
+        // this helps to initilize the properties directly without the need of seperate constructor. 
+        // System.Console.WriteLine(new PrimaryConstructor(1, "abdul hameed").Name);
+
+        // Use extension methods
+        var nameInLowerCase = "ABDUL HAMEED".NameInLowerCase();
+        System.Console.WriteLine("name in lower case: " +  nameInLowerCase);
+        var meanOfTheValue = 100.Mean();
+        System.Console.WriteLine("mean of the value: " + meanOfTheValue);
+
+
     }
 }
