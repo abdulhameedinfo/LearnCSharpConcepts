@@ -1,0 +1,14 @@
+What is Composition Design Pattern?
+Composition is a technique where an object is composed of other objects, 
+meaning it has references to other objects to achieve its functionality.
+
+How it Works?
+Instead of inheriting everything from a superclass, 
+composition allows an object to include ("compose") other objects 
+that provide specific behaviors.
+
+Example:
+Imagine you’re building a "Robot" that needs multiple behaviors like "speak" and "move."
+Rather than making "Robot" a subclass of every type of "Speaker" or "Mover," 
+you can instead create a Speaker and Mover component that "Robot" can use. 
+This makes "Robot" flexible because you can change or add new behaviors easily.

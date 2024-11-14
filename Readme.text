@@ -1,0 +1,14 @@
+What is Decorator pattern?
+The decorator pattern is a structural pattern that allows behaviors to be 
+added to an object dynamically.
+
+How it works: Instead of creating subclasses for each possible combination 
+of features, you "wrap" an object with decorator classes that add new behaviors.
+
+Example: 
+Say you have a "Coffee" object. A decorator pattern lets you add features 
+like "Milk" or "Sugar" dynamically by wrapping the "Coffee" object 
+in a "MilkDecorator" or "SugarDecorator." Each decorator can independently 
+add something extra, so you can have just "Milk" or both "Milk" and "Sugar" 
+without creating new classes for every combination.
+

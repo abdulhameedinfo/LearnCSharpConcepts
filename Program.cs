@@ -29,11 +29,33 @@ public class Program
         // System.Console.WriteLine(new PrimaryConstructor(1, "abdul hameed").Name);
 
         // Use extension methods
-        var nameInLowerCase = "ABDUL HAMEED".NameInLowerCase();
-        System.Console.WriteLine("name in lower case: " +  nameInLowerCase);
-        var meanOfTheValue = 100.Mean();
-        System.Console.WriteLine("mean of the value: " + meanOfTheValue);
+        // var nameInLowerCase = "ABDUL HAMEED".NameInLowerCase();
+        // var meanOfTheValue = 100.Mean();
+
+        // Composition design pattern: builds an object with flexible parts it needs.
+        // ISpeaker basicSpeaker = new BasicSpeaker();
+        // IMover basicMover = new BasicMover();
+        // var robot = new Robot(basicSpeaker, basicMover);
+        // System.Console.WriteLine(robot.CanSpeak());
+        // System.Console.WriteLine(robot.CanMove());
+
+        // Decorator design pattern
 
 
+        // Start with a basic coffee
+        ICoffee coffee = new BasicCoffee();
+        Console.WriteLine($"{coffee.GetDescription()} costs ${coffee.GetCost()}");
+
+        // Add Sugar to the coffee
+        coffee = new SugarDecorator(coffee);
+        Console.WriteLine($"{coffee.GetDescription()} costs ${coffee.GetCost()}");
+
+        // Add Milk to the coffee
+        coffee = new MilkDecorator(coffee);
+        Console.WriteLine($"{coffee.GetDescription()} costs ${coffee.GetCost()}");
+
+        // Add Fruit Cake
+        coffee = new FruitCakeDecorator(coffee);
+        System.Console.WriteLine($"{coffee.GetDescription()} costs ${coffee.GetCost()}");
     }
 }
