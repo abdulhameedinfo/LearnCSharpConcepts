@@ -41,7 +41,7 @@ public class GenericList<T>
     {
         var numericValues = values.Select(x => double.TryParse(x?.ToString(), out double value) ? value : (double?)null)
         .Where(x => x.HasValue)
-        .Select(x => x.Value);
+        .Select(x => x != null ? x.Value : 0);
         return numericValues.Any() ? numericValues.Average() : 0;
     }
 
