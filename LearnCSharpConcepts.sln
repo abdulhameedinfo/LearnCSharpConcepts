@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "temp", "temp", "{4F88BE25-9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "c:\Users\AL AZIZ COMP\Desktop\temp\WebApplication1\WebApplication1.csproj", "{729F1954-6269-407D-8D5A-59D525320C9F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "c:", "c:\", "{D3CA4FFE-5DCA-4C62-8E01-CB1DDAC9FEE3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "c:", "c:\\", "{D3CA4FFE-5DCA-4C62-8E01-CB1DDAC9FEE3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{DE6E95ED-0E8F-43C9-99DA-F796B7ECDD42}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "temp", "temp", "{46BC0F1E-B9DA-4546-8EB4-3831A80063DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1testing", "c:\Users\AL AZIZ COMP\Desktop\temp\WebApplication1testing\WebApplication1testing.csproj", "{84D234FB-60E1-43F9-86F7-7EEF3B6518EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationApp", "..\AuthenticationApp\AuthenticationApp.csproj", "{5E266668-9792-43BE-A3D0-2C90CFE09351}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{84D234FB-60E1-43F9-86F7-7EEF3B6518EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84D234FB-60E1-43F9-86F7-7EEF3B6518EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84D234FB-60E1-43F9-86F7-7EEF3B6518EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E266668-9792-43BE-A3D0-2C90CFE09351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E266668-9792-43BE-A3D0-2C90CFE09351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E266668-9792-43BE-A3D0-2C90CFE09351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E266668-9792-43BE-A3D0-2C90CFE09351}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
