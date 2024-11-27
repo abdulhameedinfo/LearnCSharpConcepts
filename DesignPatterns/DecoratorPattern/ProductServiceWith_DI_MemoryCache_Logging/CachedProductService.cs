@@ -14,10 +14,10 @@ public class CachedProductService : IProductService
     public string GetProductById(int id)
     {
         // Check if the product is in the cache
-        if (_cache.TryGetValue(id, out string cachedProduct))
+        if (_cache.TryGetValue(id, out string? cachedProduct))
         {
             Console.WriteLine($"Cache hit for ID: {id}");
-            return cachedProduct; // Return cached value
+            return cachedProduct ?? ""; // Return cached value
         }
 
         // If not in cache, fetch from the inner service

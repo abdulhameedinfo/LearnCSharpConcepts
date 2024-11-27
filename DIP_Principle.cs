@@ -3,12 +3,12 @@ public class DIP_Principle_To_Send_Notifications
     public DIP_Principle_To_Send_Notifications()
     {
         // Send Email Notification
-        NotificationService notificationService = new NotificationService(new EmailSender());
-        notificationService._notificationSender.Send("Hi, We are informing you via email...");
+        NotificationService notificationService = new NotificationService(new NotificationSenderFactory());
+        notificationService.Notify("Hi, We are informing you via email...", NotificationType.Email);
 
         // Send SMS
-        notificationService = new NotificationService(new SmsSender());
-        notificationService._notificationSender.Send("Hi, We are informing you via SMS...");
+        notificationService = new NotificationService(new NotificationSenderFactory());
+        notificationService.Notify("Hi, We are informing you via SMS...", NotificationType.SMS);
     }
 }
 
