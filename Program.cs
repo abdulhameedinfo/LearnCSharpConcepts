@@ -30,6 +30,7 @@ public partial class Program
         var serviceProvider = new ServiceCollection()
             .AddSingleton<Application>() // Register Application
             .AddTransient<ApplicationWithDIServices>() // Register ApplicationWithDIServices
+                                                       // Add docorator service
             .AddTransient<IProductService>(provider =>
             {
                 // Resolve dependencies for the decorator pattern
@@ -44,6 +45,15 @@ public partial class Program
             .AddTransient<ProductService>() // Register ProductService explicitly (though not directly used in DI)
             .AddMemoryCache() // Add memory caching
             .AddLogging(configure => configure.AddConsole()) // Add logging
+
+            // Register a decorator service without using Scrutor
+
+            .AddTransient<IRepository<User>>(provider =>
+            {
+                var userRepository = provider.GetRequiredService<UserRepository>();
+                return new RepositoryLoggerDecorator<User>(userRepository);
+            })
+            .AddTransient<UserRepository>()
             .BuildServiceProvider();
 
         return serviceProvider;
