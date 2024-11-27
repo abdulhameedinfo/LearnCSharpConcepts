@@ -33,14 +33,14 @@ public partial class Program
             // Decorator design pattern
             // DecoratorPattern();
 
-            System.Console.WriteLine("This is application without DI services being registered!");
-
             //Compare ExceptBy and their alternatives
             // var summaryOfArrayBenchMark = BenchmarkRunner.Run<ExceptByAndAlternatives>();
             // dotnet run --project LearnCSharpConcepts.csproj -c Release
 
             //Dependency inverstion  principle
-            new DIP_Principle_To_Send_Notifications();
+            // new DIP_Principle_To_Send_Notifications();
+
+            System.Console.WriteLine("App WITHOUT DI...");
         }
 
         private enum Colors { white, red, black, green };
