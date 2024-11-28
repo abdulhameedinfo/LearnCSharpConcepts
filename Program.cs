@@ -48,12 +48,17 @@ public partial class Program
 
             // Register a decorator service without using Scrutor
 
-            .AddTransient<IRepository<User>>(provider =>
-            {
-                var userRepository = provider.GetRequiredService<UserRepository>();
-                return new RepositoryLoggerDecorator<User>(userRepository);
-            })
-            .AddTransient<UserRepository>()
+            // .AddTransient<IRepository<User>>(provider =>
+            // {
+            //     var userRepository = provider.GetRequiredService<UserRepository>();
+            //     return new RepositoryLoggerDecorator<User>(userRepository);
+            // })
+            // .AddTransient<UserRepository>()
+
+            // Register a decorator service using the Scrutor
+            .AddScoped<IRepository<User>,UserRepository>()
+            .Decorate<IRepository<User>, RepositoryLoggerDecorator<User>>()
+            .Decorate<IRepository<User>, RepositoryCacheDecorator<User>>()
             .BuildServiceProvider();
 
         return serviceProvider;
