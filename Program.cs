@@ -10,8 +10,6 @@ using Microsoft.Extensions.Logging;
 
 public partial class Program
 {
-
-
     public static void Main(string[] args)
     {
         var services = CreateServices();
@@ -43,7 +41,7 @@ public partial class Program
                 return new LoggingProductService(cachedProductService, logger);
             })
             .AddTransient<ProductService>() // Register ProductService explicitly (though not directly used in DI)
-            .AddMemoryCache() // Add memory caching
+            .AddMemoryCache() // Add memory caching (https://codewithmukesh.com/blog/in-memory-caching-in-aspnet-core/)
             .AddLogging(configure => configure.AddConsole()) // Add logging
 
             // Register a decorator service without using Scrutor
@@ -56,7 +54,7 @@ public partial class Program
             // .AddTransient<UserRepository>()
 
             // Register a decorator service using the Scrutor
-            .AddScoped<IRepository<User>,UserRepository>()
+            .AddScoped<IRepository<User>, UserRepository>()
             .Decorate<IRepository<User>, RepositoryLoggerDecorator<User>>()
             .Decorate<IRepository<User>, RepositoryCacheDecorator<User>>()
             .BuildServiceProvider();

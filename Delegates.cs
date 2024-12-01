@@ -4,7 +4,16 @@ public class Delegates
     {
         // Callback delegates
         new CallBackDelegate();
+
+        // Generic delegate to High Order function 
+
+
+        System.Console.WriteLine(devide(6, 2));
     }
+
+    // built-in delegate in .NET used to represent methods with 2 input parameters and one return type. like int Divide(int t1, int t2);
+    // The part (t1, t2) => t1 / t2 is a lambda expression.
+    public Func<int, int, int> devide = (t1, t2) => t1 / t2;
 }
 
 public class CallBackDelegate

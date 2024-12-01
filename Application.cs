@@ -1,5 +1,6 @@
 using System.Drawing;
 using BenchmarkDotNet.Running;
+using Microsoft.Diagnostics.Tracing.Parsers.MicrosoftWindowsWPF;
 
 public partial class Program
 {
@@ -41,6 +42,9 @@ public partial class Program
             // new DIP_Principle_To_Send_Notifications();
 
             System.Console.WriteLine("App WITHOUT DI...");
+            // System.Console.WriteLine(HOF.devide(6,2));
+            // var swapHOF = HOF.devide.SwapHOF();
+            // System.Console.WriteLine(swapHOF(2,6)); // Both should return same result as the later one is swapping the arguments
         }
 
         private enum Colors { white, red, black, green };

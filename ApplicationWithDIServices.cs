@@ -12,14 +12,14 @@ public partial class Program
         }
         public void Start()
         {
-            System.Console.WriteLine("App WITH DI...");
+            // System.Console.WriteLine("App WITH DI...");
 
             // /Call decorator services
             // var product = _productService.GetProductById(2);
             // System.Console.WriteLine($"product is {product}");
 
             // With decorator it should first call loging decorator then user repository
-            _userRepository.GetAll();
+            // _userRepository.GetAll();
         }
     }
 }
