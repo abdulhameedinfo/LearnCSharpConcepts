@@ -47,23 +47,10 @@ public partial class Program
             // System.Console.WriteLine(HOF.devide(6,2));
             // var swapHOF = HOF.devide.SwapHOF();
             // System.Console.WriteLine(swapHOF(2,6)); // Both should return same result as the later one is swapping the arguments
-            int[] studentIds = new int[] { 1, 2, 3, 4, 5, 6 };
-            string[] studentNames = ["Abdul Hameed", "Alp Arsalan", "Maria", "Zahra"];
 
-            var students = studentNames.Zip(studentIds, (name, id) => new{
-                Id = id,
-                Name = name
-            });
+            // ZipIEnumerable();
 
-            System.Console.WriteLine(JsonConvert.SerializeObject(students));
-        }
-
-        private enum Colors { white, red, black, green };
-        public record Car(string name, string Color);
-        private static void ExtensionMethods()
-        {
-            var nameInLowerCase = "ABDUL HAMEED".NameInLowerCase();
-            var meanOfTheValue = 100.Mean();
+            new AllAlgorithms();
         }
 
         private static void CompositionPattern()
