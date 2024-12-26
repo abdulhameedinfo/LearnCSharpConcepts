@@ -42,7 +42,7 @@ public partial class Program
             })
             .AddTransient<ProductService>() // Register ProductService explicitly (though not directly used in DI)
             .AddMemoryCache() // Add memory caching (https://codewithmukesh.com/blog/in-memory-caching-in-aspnet-core/)
-            .AddLogging(configure => configure.AddConsole()) // Add logging
+            .AddLogging(configure => configure.AddConsole()) 
 
             // Register a decorator service without using Scrutor
 

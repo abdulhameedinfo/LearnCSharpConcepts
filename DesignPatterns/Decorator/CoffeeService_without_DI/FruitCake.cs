@@ -1,6 +1,6 @@
-public class FruitCakeDecorator : CoffeeDecorator
+public class FruitCake : CoffeeDecorator
 {
-    public FruitCakeDecorator(ICoffee coffee) : base(coffee)
+    public FruitCake(ICoffee coffee) : base(coffee)
     {
         _coffee = coffee;
     }

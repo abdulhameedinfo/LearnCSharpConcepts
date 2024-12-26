@@ -31,11 +31,15 @@ public partial class Program
             // ExtensionMethods();
 
             // Composition design pattern: builds an object with flexible parts it needs.
-            // CompositionPattern();
+            // Composition.CompleteRobot();
 
             // Decorator design pattern
-            // DecoratorPattern();
-
+            // MorningCofee.TakeCoffee();
+            INotifier notifier = new EmailNotifier();
+            notifier = new SMSNotifier(notifier);
+            notifier = new PushNotifier(notifier);
+            notifier.Send("Hello Tuli eServices!");
+            
             //Compare ExceptBy and their alternatives
             // var summaryOfArrayBenchMark = BenchmarkRunner.Run<ExceptByAndAlternatives>();
             // dotnet run --project LearnCSharpConcepts.csproj -c Release
@@ -50,35 +54,7 @@ public partial class Program
 
             // ZipIEnumerable();
 
-            new AllAlgorithms();
-        }
-
-        private static void CompositionPattern()
-        {
-            ISpeaker basicSpeaker = new BasicSpeaker();
-            IMover basicMover = new BasicMover();
-            var robot = new Robot(basicSpeaker, basicMover);
-            System.Console.WriteLine(robot.CanSpeak());
-            System.Console.WriteLine(robot.CanMove());
-        }
-
-        private static void DecoratorPattern()
-        {
-            // Start with a basic coffee
-            ICoffee coffee = new BasicCoffee();
-            Console.WriteLine($"{coffee.GetDescription()} costs ${coffee.GetCost()}");
-
-            // Add Sugar to the coffee
-            coffee = new SugarDecorator(coffee);
-            Console.WriteLine($"{coffee.GetDescription()} costs ${coffee.GetCost()}");
-
-            // Add Milk to the coffee
-            coffee = new MilkDecorator(coffee);
-            Console.WriteLine($"{coffee.GetDescription()} costs ${coffee.GetCost()}");
-
-            // Add Fruit Cake
-            coffee = new FruitCakeDecorator(coffee);
-            System.Console.WriteLine($"{coffee.GetDescription()} costs ${coffee.GetCost()}");
-        }
+            // new AllAlgorithms();
+        }       
     }
 }
