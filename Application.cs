@@ -35,11 +35,8 @@ public partial class Program
 
             // Decorator design pattern
             // MorningCofee.TakeCoffee();
-            INotifier notifier = new EmailNotifier();
-            notifier = new SMSNotifier(notifier);
-            notifier = new PushNotifier(notifier);
-            notifier.Send("Hello Tuli eServices!");
-            
+            // NotificationSender.Send();
+
             //Compare ExceptBy and their alternatives
             // var summaryOfArrayBenchMark = BenchmarkRunner.Run<ExceptByAndAlternatives>();
             // dotnet run --project LearnCSharpConcepts.csproj -c Release
@@ -47,7 +44,6 @@ public partial class Program
             //Dependency inverstion  principle
             // new DIP_Principle_To_Send_Notifications();
 
-            System.Console.WriteLine("App WITHOUT DI...");
             // System.Console.WriteLine(HOF.devide(6,2));
             // var swapHOF = HOF.devide.SwapHOF();
             // System.Console.WriteLine(swapHOF(2,6)); // Both should return same result as the later one is swapping the arguments
@@ -55,6 +51,8 @@ public partial class Program
             // ZipIEnumerable();
 
             // new AllAlgorithms();
-        }       
+            // New lock type in C# 13
+            new NewLockType();
+        }
     }
 }

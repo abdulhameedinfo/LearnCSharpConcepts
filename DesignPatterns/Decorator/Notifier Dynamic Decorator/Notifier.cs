@@ -8,6 +8,7 @@ public class EmailNotifier : INotifier
 {
     public void Send(string message)
     {
+
         System.Console.WriteLine($"Sending Email: {message}");
     }
 }
@@ -49,6 +50,7 @@ public class PushNotifier : NotifierDecorator
     }
     public override void Send(string message)
     {
+
         base.Send(message);
         System.Console.WriteLine($"Sending Push Notification: {message}");
     }
