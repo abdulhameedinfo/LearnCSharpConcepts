@@ -1,8 +1,10 @@
 using System.Drawing;
 using BenchmarkDotNet.Running;
+using LearnCSharpConcepts.Databases.EntityFrameworkCore;
 using Microsoft.Diagnostics.Tracing.Parsers.MicrosoftWindowsWPF;
 using Microsoft;
 using Newtonsoft.Json;
+using UnitOfWork;
 
 public partial class Program
 {
@@ -52,7 +54,14 @@ public partial class Program
 
             // new AllAlgorithms();
             // New lock type in C# 13
-            new NewLockType();
+            // new NewLockType();
+
+            // new ChainResponsibility().Start();
+            // new ChainOfResponsibilities.ChainOfResponsibility();
+
+            //Unit of work pattern
+            // new UnitOfWorkExample().Start();
+            
         }
     }
 }

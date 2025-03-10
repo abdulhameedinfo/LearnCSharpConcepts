@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BenchmarkDotNet.Running;
+using LearnCSharpConcepts.Databases.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -28,7 +30,10 @@ public partial class Program
         var serviceProvider = new ServiceCollection()
             .AddSingleton<Application>() // Register Application
             .AddTransient<ApplicationWithDIServices>() // Register ApplicationWithDIServices
-                                                       // Add docorator service
+            
+            .AddDbContext<PostgresDbContext>(options =>
+                options.UseNpgsql("Host=localhost;Database=csharconcepts;Username=postgres;Password=postgres"))
+
             .AddTransient<IProductService>(provider =>
             {
                 // Resolve dependencies for the decorator pattern
