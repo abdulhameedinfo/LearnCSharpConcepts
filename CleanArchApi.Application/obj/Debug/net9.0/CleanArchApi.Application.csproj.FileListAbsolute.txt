@@ -1,0 +1,12 @@
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Application\bin\Debug\net9.0\CleanArchApi.Application.deps.json
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Application\bin\Debug\net9.0\CleanArchApi.Application.dll
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Application\bin\Debug\net9.0\CleanArchApi.Application.pdb
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Application\obj\Debug\net9.0\CleanArchApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Application\obj\Debug\net9.0\CleanArchApi.Application.AssemblyInfoInputs.cache
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Application\obj\Debug\net9.0\CleanArchApi.Application.AssemblyInfo.cs
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Application\obj\Debug\net9.0\CleanArchApi.Application.csproj.CoreCompileInputs.cache
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Application\obj\Debug\net9.0\CleanArchApi.Application.sourcelink.json
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Application\obj\Debug\net9.0\CleanArchApi.Application.dll
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Application\obj\Debug\net9.0\refint\CleanArchApi.Application.dll
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Application\obj\Debug\net9.0\CleanArchApi.Application.pdb
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Application\obj\Debug\net9.0\ref\CleanArchApi.Application.dll

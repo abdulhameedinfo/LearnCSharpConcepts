@@ -1,0 +1,12 @@
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Tests\bin\Debug\net9.0\CleanArchApi.Tests.deps.json
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Tests\bin\Debug\net9.0\CleanArchApi.Tests.dll
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Tests\bin\Debug\net9.0\CleanArchApi.Tests.pdb
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Tests\obj\Debug\net9.0\CleanArchApi.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Tests\obj\Debug\net9.0\CleanArchApi.Tests.AssemblyInfoInputs.cache
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Tests\obj\Debug\net9.0\CleanArchApi.Tests.AssemblyInfo.cs
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Tests\obj\Debug\net9.0\CleanArchApi.Tests.csproj.CoreCompileInputs.cache
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Tests\obj\Debug\net9.0\CleanArchApi.Tests.sourcelink.json
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Tests\obj\Debug\net9.0\CleanArchApi.Tests.dll
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Tests\obj\Debug\net9.0\refint\CleanArchApi.Tests.dll
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Tests\obj\Debug\net9.0\CleanArchApi.Tests.pdb
+D:\Projects\Learning\DotnetConcepts\CleanArchApi.Tests\obj\Debug\net9.0\ref\CleanArchApi.Tests.dll
