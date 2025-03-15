@@ -3866,9 +3866,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Learning\\DotnetConcepts\\ConsoleApp\\LearnCSharpConcepts.csproj",
-      "projectName": "LearnCSharpConcepts",
-      "projectPath": "D:\\Projects\\Learning\\DotnetConcepts\\ConsoleApp\\LearnCSharpConcepts.csproj",
+      "projectUniqueName": "D:\\Projects\\Learning\\DotnetConcepts\\ConsoleApp\\LearnDotNetConsole.csproj",
+      "projectName": "LearnDotNetConsole",
+      "projectPath": "D:\\Projects\\Learning\\DotnetConcepts\\ConsoleApp\\LearnDotNetConsole.csproj",
       "packagesPath": "C:\\Users\\Abdul-Hameed\\.nuget\\packages\\",
       "outputPath": "D:\\Projects\\Learning\\DotnetConcepts\\ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",

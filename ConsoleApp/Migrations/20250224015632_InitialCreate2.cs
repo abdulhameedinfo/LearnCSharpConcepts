@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace LearnCSharpConcepts.Migrations
+namespace LearnDotNetConsole.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate2 : Migration

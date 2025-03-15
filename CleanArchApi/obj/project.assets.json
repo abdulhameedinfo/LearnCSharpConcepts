@@ -81,11 +81,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Learning\\DotnetConcepts\\DotnetCoreAPI\\DotnetCoreAPI.csproj",
-      "projectName": "DotnetCoreAPI",
-      "projectPath": "D:\\Projects\\Learning\\DotnetConcepts\\DotnetCoreAPI\\DotnetCoreAPI.csproj",
+      "projectUniqueName": "D:\\Projects\\Learning\\DotnetConcepts\\CleanArchApi\\CleanArchApi.csproj",
+      "projectName": "CleanArchApi",
+      "projectPath": "D:\\Projects\\Learning\\DotnetConcepts\\CleanArchApi\\CleanArchApi.csproj",
       "packagesPath": "C:\\Users\\Abdul-Hameed\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Learning\\DotnetConcepts\\DotnetCoreAPI\\obj\\",
+      "outputPath": "D:\\Projects\\Learning\\DotnetConcepts\\CleanArchApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

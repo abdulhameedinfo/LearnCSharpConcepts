@@ -1,6 +1,6 @@
 using System.Drawing;
 using BenchmarkDotNet.Running;
-using LearnCSharpConcepts.Databases.EntityFrameworkCore;
+using LearnDotNetConsole.Databases.EntityFrameworkCore;
 using Microsoft.Diagnostics.Tracing.Parsers.MicrosoftWindowsWPF;
 using Microsoft;
 using Newtonsoft.Json;
@@ -41,7 +41,7 @@ public partial class Program
 
             //Compare ExceptBy and their alternatives
             // var summaryOfArrayBenchMark = BenchmarkRunner.Run<ExceptByAndAlternatives>();
-            // dotnet run --project LearnCSharpConcepts.csproj -c Release
+            // dotnet run --project LearnDotNetConsole.csproj -c Release
 
             //Dependency inverstion  principle
             // new DIP_Principle_To_Send_Notifications();

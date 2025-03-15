@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace LearnCSharpConcepts.Databases.EntityFrameworkCore;
+namespace LearnDotNetConsole.Databases.EntityFrameworkCore;
 
 public class PostgresDbContext(DbContextOptions<PostgresDbContext> options) : DbContext(options)
 {

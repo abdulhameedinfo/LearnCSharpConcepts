@@ -1,4 +1,4 @@
-using LearnCSharpConcepts.Databases.EntityFrameworkCore;
+using LearnDotNetConsole.Databases.EntityFrameworkCore;
 
 public partial class Program
 {
