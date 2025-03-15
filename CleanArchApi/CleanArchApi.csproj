@@ -10,4 +10,21 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="CleanArchApi.Api\Controllers\" />
+    <Folder Include="CleanArchApi.Api\DependencyInjection\" />
+    <Folder Include="CleanArchApi.Api\Middlewares\" />
+    <Folder Include="CleanArchApi.Application\DTOs\" />
+    <Folder Include="CleanArchApi.Application\Interfaces\" />
+    <Folder Include="CleanArchApi.Application\Services\" />
+    <Folder Include="CleanArchApi.Application\Validators\" />
+    <Folder Include="CleanArchApi.Domain\Entities\" />
+    <Folder Include="CleanArchApi.Domain\Enums\" />
+    <Folder Include="CleanArchApi.Infrastructure\Repository\" />
+    <Folder Include="CleanArchApi.Infrastructure\Services\" />
+    <Folder Include="CleanArchApi.Tests\ApiTests\" />
+    <Folder Include="CleanArchApi.Tests\ApplicationTests\" />
+    <Folder Include="CleanArchApi.Tests\InfrastructureTests\" />
+  </ItemGroup>
+
 </Project>
