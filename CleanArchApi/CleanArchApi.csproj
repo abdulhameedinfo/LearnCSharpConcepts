@@ -13,7 +13,6 @@
   <ItemGroup>
     <Folder Include="CleanArchApi.Api\Controllers\" />
     <Folder Include="CleanArchApi.Api\DependencyInjection\" />
-    <Folder Include="CleanArchApi.Api\Middlewares\" />
     <Folder Include="CleanArchApi.Application\DTOs\" />
     <Folder Include="CleanArchApi.Application\Interfaces\" />
     <Folder Include="CleanArchApi.Application\Services\" />
