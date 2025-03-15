@@ -81,11 +81,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Learning\\LearnCSharpConcepts\\DotnetCoreAPI\\DotnetCoreAPI.csproj",
+      "projectUniqueName": "D:\\Projects\\Learning\\DotnetConcepts\\DotnetCoreAPI\\DotnetCoreAPI.csproj",
       "projectName": "DotnetCoreAPI",
-      "projectPath": "D:\\Projects\\Learning\\LearnCSharpConcepts\\DotnetCoreAPI\\DotnetCoreAPI.csproj",
+      "projectPath": "D:\\Projects\\Learning\\DotnetConcepts\\DotnetCoreAPI\\DotnetCoreAPI.csproj",
       "packagesPath": "C:\\Users\\Abdul-Hameed\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Learning\\LearnCSharpConcepts\\DotnetCoreAPI\\obj\\",
+      "outputPath": "D:\\Projects\\Learning\\DotnetConcepts\\DotnetCoreAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
