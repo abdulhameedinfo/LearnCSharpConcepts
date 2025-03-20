@@ -3,8 +3,6 @@
 .fake
 ./CleanArchApi/obj
 ./ConsoleApp/obj
-.idea/
-/.idea
 /ConsoleApp/bin/Debug/net9.0/LearnCSharpConcepts.dll
 /ConsoleApp/bin/Debug/net9.0/LearnCSharpConcepts.exe
 /ConsoleApp/bin/Debug/net9.0/LearnCSharpConcepts.pdb
@@ -30,7 +28,20 @@
 /DotnetCoreAPI/obj/Debug/net9.0/DotnetCoreAPI.pdb
 /DotnetCoreAPI/obj/Debug/net9.0/DotnetCoreAPI.sourcelink.json
 /DotnetCoreAPI/obj/rider.project.restore.info
-/.idea/.idea.DotNetMastery/.idea/.name
-/.idea/.idea.DotNetMastery/.idea/indexLayout.xml
-/.idea/.idea.DotNetMastery/.idea/projectSettingsUpdater.xml
-/.idea/.idea.DotNetMastery/.idea/workspace.xml
+# Ignore JetBrains Rider/IntelliJ IDEA files
+.idea/
+*.iml
+
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore .NET-specific build folders across all subprojects
+**/bin/
+**/obj/
+
+# Ignore specific framework folders (for .NET 9.0 and future versions)
+**/bin/Debug/net9.0/
+**/bin/Release/net9.0/
+**/obj/Debug/net9.0/
+**/obj/Release/net9.0
