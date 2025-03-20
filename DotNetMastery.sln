@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchApi.Infrastructure
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchApi.Tests", "CleanArchApi.Tests\CleanArchApi.Tests.csproj", "{E594BDE9-3EB8-4E9A-B427-0F89D42BACC0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArchitecture", "CleanArchitecture", "{BB47B421-39AF-4C1D-856C-611BB7BBA491}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,5 +65,12 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3F09E11C-E09F-4853-9741-A3ABE92EB6E5}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{363800A8-5AD2-47E8-B1C4-2F119D3FC16B} = {BB47B421-39AF-4C1D-856C-611BB7BBA491}
+		{D26B9825-4E60-4B3C-8188-9D03071FC8E9} = {BB47B421-39AF-4C1D-856C-611BB7BBA491}
+		{F986F3C2-3F97-45DA-99D5-2F2B5DC83077} = {BB47B421-39AF-4C1D-856C-611BB7BBA491}
+		{12B82D82-74B3-430C-9C4D-6F67C38EDFED} = {BB47B421-39AF-4C1D-856C-611BB7BBA491}
+		{E594BDE9-3EB8-4E9A-B427-0F89D42BACC0} = {BB47B421-39AF-4C1D-856C-611BB7BBA491}
 	EndGlobalSection
 EndGlobal

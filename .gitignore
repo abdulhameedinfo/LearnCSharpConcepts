@@ -3,6 +3,8 @@
 .fake
 ./CleanArchApi/obj
 ./ConsoleApp/obj
+.idea/
+/.idea
 /ConsoleApp/bin/Debug/net9.0/LearnCSharpConcepts.dll
 /ConsoleApp/bin/Debug/net9.0/LearnCSharpConcepts.exe
 /ConsoleApp/bin/Debug/net9.0/LearnCSharpConcepts.pdb
@@ -28,3 +30,7 @@
 /DotnetCoreAPI/obj/Debug/net9.0/DotnetCoreAPI.pdb
 /DotnetCoreAPI/obj/Debug/net9.0/DotnetCoreAPI.sourcelink.json
 /DotnetCoreAPI/obj/rider.project.restore.info
+/.idea/.idea.DotNetMastery/.idea/.name
+/.idea/.idea.DotNetMastery/.idea/indexLayout.xml
+/.idea/.idea.DotNetMastery/.idea/projectSettingsUpdater.xml
+/.idea/.idea.DotNetMastery/.idea/workspace.xml

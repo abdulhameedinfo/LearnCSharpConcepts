@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BenchmarkDotNet.Running;
 using LearnDotNetConsole.Databases.EntityFrameworkCore;
+using LearnDotNetConsole.Databases.EntityFrameworkCore.Postgres;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,7 +22,7 @@ public partial class Program
         app.Start();
 
         // Resolve and start the Application with DI services
-        var applicationWithDIServices = services.GetRequiredService<ApplicationWithDIServices>();
+        var applicationWithDIServices = services.GetRequiredService<ApplicationWithDiServices>();
         applicationWithDIServices.Start();
     }
 
@@ -29,7 +30,7 @@ public partial class Program
     {
         var serviceProvider = new ServiceCollection()
             .AddSingleton<Application>() // Register Application
-            .AddTransient<ApplicationWithDIServices>() // Register ApplicationWithDIServices
+            .AddTransient<ApplicationWithDiServices>() // Register ApplicationWithDIServices
             
             .AddDbContext<PostgresDbContext>(options =>
                 options.UseNpgsql("Host=localhost;Database=csharconcepts;Username=postgres;Password=postgres"))

@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace LearnDotNetConsole.Databases.EntityFrameworkCore;
+namespace LearnDotNetConsole.Databases.EntityFrameworkCore.Postgres;
 
 public class PostgresDbContext(DbContextOptions<PostgresDbContext> options) : DbContext(options)
 {
@@ -22,6 +22,8 @@ public class Payment
     public Guid Id { get; init; } = Guid.NewGuid();
     public decimal Amount { get; init; }
     public DateTime CreatedAt { get; init; }
+    // Add this property to store the discriminator value
+    public string PaymentType { get; private set; }
 }
 
 public class CreditCardPayment : Payment
@@ -34,15 +36,8 @@ public class PayoneerPayment : Payment
     public string PayoneerEmail { get; init; } = string.Empty;
 }
 
-public class PaymentService
+public class PaymentService(PostgresDbContext context)
 {
-    private readonly PostgresDbContext _context;
-
-    public PaymentService(PostgresDbContext context)
-    {
-        _context = context;
-    }
-
     public void AddPayments()
     {
         var creditPayment = new CreditCardPayment
@@ -59,18 +54,18 @@ public class PaymentService
             CreatedAt = DateTime.UtcNow
         };
 
-        _context.Payments.Add(creditPayment);
-        _context.Payments.Add(payoneerPayment);
-        _context.SaveChanges();
+        context.Payments.Add(creditPayment);
+        context.Payments.Add(payoneerPayment);
+        context.SaveChanges();
     }
 
     public void GetPayments()
     {
-        var allPayments = _context.Payments.ToList();
+        var allPayments = context.Payments.ToList();
 
         foreach (var payment in allPayments)
         {
-            Console.WriteLine($"ID: {payment.Id}, Amount: {payment.Amount}, Type: {payment.GetType().Name}");
+            Console.WriteLine($"ID: {payment.Id}, Amount: {payment.Amount}, PaymentType: {payment.PaymentType}, Type: {payment.GetType().Name}");
         }
     }
 }

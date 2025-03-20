@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace LearnDotNetConsole.Databases.EntityFrameworkCore;
+namespace LearnDotNetConsole.Databases.EntityFrameworkCore.Postgres;
 
 public class PostgresDbContextFactory : IDesignTimeDbContextFactory<PostgresDbContext>
 {

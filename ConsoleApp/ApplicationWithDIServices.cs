@@ -1,19 +1,16 @@
 using LearnDotNetConsole.Databases.EntityFrameworkCore;
+using LearnDotNetConsole.Databases.EntityFrameworkCore.Postgres;
 
 public partial class Program
 {
-    public class ApplicationWithDIServices
+    public class ApplicationWithDiServices(
+        IProductService productService,
+        IRepository<User> userRepository,
+        PostgresDbContext postgresDbContext)
     {
-        private readonly IProductService _productService;
-        private readonly IRepository<User> _userRepository;
-        private PostgresDbContext _postgresDbContext;
+        private readonly IProductService _productService = productService;
+        private readonly IRepository<User> _userRepository = userRepository;
 
-        public ApplicationWithDIServices(IProductService productService, IRepository<User> userRepository, PostgresDbContext postgresDbContext)
-        {
-            _productService = productService;
-            _userRepository = userRepository;
-            _postgresDbContext = postgresDbContext;
-        }
         public void Start()
         {
             // System.Console.WriteLine("App WITH DI...");
@@ -26,7 +23,7 @@ public partial class Program
             // _userRepository.GetAll();
             
             // Descriminator | Postgres
-            new PaymentService(_postgresDbContext).GetPayments();
+            new PaymentService(postgresDbContext).GetPayments();
         }
     }
 }

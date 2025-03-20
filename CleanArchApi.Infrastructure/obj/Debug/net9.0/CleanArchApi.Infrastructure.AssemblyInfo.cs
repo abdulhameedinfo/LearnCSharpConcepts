@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CleanArchApi.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d4ac7741f80623023b593c2aef9dd9ad7dbfcfa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12c8652685f54d5524f4340e17804736e340b6af")]
 [assembly: System.Reflection.AssemblyProductAttribute("CleanArchApi.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CleanArchApi.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
