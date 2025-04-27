@@ -2,5 +2,5 @@ namespace LearnDotNetConsole.DesignPatterns.FactoryMethod.Notification.Interface
 
 public interface INotification
 {
-    void SendEmail();
+    string Send();
 }

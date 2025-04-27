@@ -23,7 +23,7 @@ public partial class Program
             // _userRepository.GetAll();
             
             // Descriminator | Postgres
-            new PaymentService(postgresDbContext).GetPayments();
+            // new PaymentService(postgresDbContext).GetPayments();
         }
     }
 }

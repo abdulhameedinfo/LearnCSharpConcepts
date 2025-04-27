@@ -1,6 +1,8 @@
 using System.Drawing;
 using BenchmarkDotNet.Running;
 using LearnDotNetConsole.Databases.EntityFrameworkCore;
+using LearnDotNetConsole.DesignPatterns.FactoryMethod.Notification;
+using LearnDotNetConsole.DesignPatterns.FactoryMethod.Notification.Factories;
 using Microsoft.Diagnostics.Tracing.Parsers.MicrosoftWindowsWPF;
 using Microsoft;
 using Newtonsoft.Json;
@@ -62,6 +64,11 @@ public partial class Program
             //Unit of work pattern
             // new UnitOfWorkExample().Start();
             
+            // Call factory service which will call factory method to send notification. 
+            var service = new NotificationServiceFactory(new EmailNotificationFactoryCreator());
+            service.Send();
+            service = new NotificationServiceFactory(new SmsNotificationFactoryCreator());
+            service.Send();
         }
     }
 }
