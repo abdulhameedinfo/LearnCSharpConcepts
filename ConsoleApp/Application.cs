@@ -1,12 +1,4 @@
-using System.Drawing;
-using BenchmarkDotNet.Running;
-using LearnDotNetConsole.Databases.EntityFrameworkCore;
-using LearnDotNetConsole.DesignPatterns.FactoryMethod.Notification;
-using LearnDotNetConsole.DesignPatterns.FactoryMethod.Notification.Factories;
-using Microsoft.Diagnostics.Tracing.Parsers.MicrosoftWindowsWPF;
-using Microsoft;
-using Newtonsoft.Json;
-using UnitOfWork;
+using LearnDotNetConsole.DesignPatterns.Pipeline;
 
 public partial class Program
 {
@@ -63,12 +55,30 @@ public partial class Program
 
             //Unit of work pattern
             // new UnitOfWorkExample().Start();
-            
+
             // Call factory service which will call factory method to send notification. 
-            var service = new NotificationServiceFactory(new EmailNotificationFactoryCreator());
-            service.Send();
-            service = new NotificationServiceFactory(new SmsNotificationFactoryCreator());
-            service.Send();
+            // var service = new NotificationServiceFactory(new EmailNotificationFactoryCreator());
+            // service.Send();
+            // service = new NotificationServiceFactory(new SmsNotificationFactoryCreator());
+            // service.Send();
+
+
+            // Pipleline
+            var command = new EnrollmentCommand()
+            {
+                FirstName = "Abdul",
+                LastName = "Hameed",
+                Name = "Abdul Hameed"
+            };
+
+            
+            var enrollmentPipeline = new PipelineBuilder<EnrollmentCommand>();
+            enrollmentPipeline.Use(new ValidationStep<EnrollmentCommand>());
+            enrollmentPipeline.Use(new InsertionStep<EnrollmentCommand>());
+            
+            enrollmentPipeline.Execute(command);
+            command.Logs.ForEach(Console.WriteLine);
+            Console.WriteLine("User Id: " + command.Id);
         }
     }
 }
