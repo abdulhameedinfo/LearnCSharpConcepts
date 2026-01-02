@@ -1,6 +1,11 @@
 using System.Text;
 using CleanArchApi.Api.CleanArchApi.Api.Middlewares;
+using CleanArchApi.Application.Interfaces;
+using CleanArchApi.Application.Services;
+using CleanArchApi.Domain.Interfaces;
 using CleanArchApi.Infrastructure.Persistance;
+using CleanArchApi.Infrastructure.Repository;
+using CleanArchApi.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 
@@ -11,6 +16,9 @@ builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddTransient<FactoryMiddleware>(); // Register Factory based middleware
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
