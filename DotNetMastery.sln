@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchApi.Api", "CleanArchApi.Api\CleanArchApi.Api.csproj", "{363800A8-5AD2-47E8-B1C4-2F119D3FC16B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{363800A8-5AD2-47E8-B1C4-2F119D3FC16B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnDotNetConsole", "ConsoleApp\LearnDotNetConsole.csproj", "{D19F81F9-B8AD-436C-9F29-2E9B7AD5B5AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchApi.Application", "CleanArchApi.Application\CleanArchApi.Application.csproj", "{D26B9825-4E60-4B3C-8188-9D03071FC8E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{D26B9825-4E60-4B3C-8188-9D03071FC8E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchApi.Domain", "CleanArchApi.Domain\CleanArchApi.Domain.csproj", "{F986F3C2-3F97-45DA-99D5-2F2B5DC83077}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{F986F3C2-3F97-45DA-99D5-2F2B5DC83077}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchApi.Infrastructure", "CleanArchApi.Infrastructure\CleanArchApi.Infrastructure.csproj", "{12B82D82-74B3-430C-9C4D-6F67C38EDFED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{12B82D82-74B3-430C-9C4D-6F67C38EDFED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchApi.Tests", "CleanArchApi.Tests\CleanArchApi.Tests.csproj", "{E594BDE9-3EB8-4E9A-B427-0F89D42BACC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{E594BDE9-3EB8-4E9A-B427-0F89D42BACC0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArchitecture", "CleanArchitecture", "{BB47B421-39AF-4C1D-856C-611BB7BBA491}"
 EndProject
