@@ -1,12 +1,17 @@
 using System.Text;
 using Api.CleanArchApi.Api.Middlewares;
+using Application;
+using Application.Interfaces.Idempotency;
 using Application.Interfaces;
+using Application.Products.Create;
 using Application.Services;
+using CleanArchApi.Infrastructure;
 using Domain.Interfaces;
 using CleanArchApi.Infrastructure.Persistance;
 using CleanArchApi.Infrastructure.Repository;
 using CleanArchApi.Infrastructure.Services;
-using Microsoft.EntityFrameworkCore;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,13 +20,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers(); 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddTransient<FactoryMiddleware>(); // Register Factory based middleware
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
-
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer(options =>
@@ -76,6 +80,30 @@ app.MapGet("/weatherforecast", () =>
         return forecast;
     })
     .WithName("GetWeatherForecast");
+
+app.MapPost("/products", async (
+    CreateProductRequest request,
+    [FromHeader(Name = "X-Idempotency-Key")]
+    string requestId,
+    ISender sender) =>
+{
+    if (!Guid.TryParse(requestId, out Guid parsedRequestId))
+    {
+        return Results.BadRequest("Invalid Idempotency Key");
+    }
+
+    var command = new CreateProductCommand(parsedRequestId, request.Name, request.Price, request.Sku);
+
+    try
+    {
+        await sender.Send(command);
+        return Results.Ok();
+    }
+    catch (IdempotentRequestAlreadyExistsException ex)
+    {
+        return Results.Conflict(ex.Message);
+    }
+});
 
 app.MapControllers(); 
 app.Run();
